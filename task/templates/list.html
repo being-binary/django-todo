@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content%}
+<div class="row">
+    <div class="col-md-8">
+        <h2>Task</h2>
+        {% for task in tasks %}
+        <div class="list-group">
+            {% if task.completed == False %}
+            <div class="list-group-item d-flex justify-content-between mt-1 align-items-center">
+                <p>{{task.title}}</p>
+               <span>
+                <a href="{% url 'updatepage' task.id %}" class="text-decoration-none btn btn-outline-primary text-uppercase">update</a>
+                <a href="{% url 'deletepage' task.id %}" class="text-decoration-none btn btn-outline-danger text-uppercase">delete</a>
+               </span>
+            </div>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<div class="row mt-2">
+    <div class="col-md-8">
+        <h2>Completed Task</h2>
+        {% for task in tasks %}
+        <div class="list-group">
+            {% if task.completed == True %}
+            <div class="list-group-item d-flex justify-content-between mt-1 align-items-center">
+                <p><strike>{{task.title}}</strike></p>
+                <a href="{% url 'deletepage' task.id %}" class="text-decoration-none btn btn-outline-danger text-uppercase">delete</a>
+            </div>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

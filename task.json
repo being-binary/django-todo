@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Complete Django project",
+        "description": "Finish the to-do app project using Django framework.",
+        "completed": false,
+        "created_at": "2025-03-05T18:30:00Z",
+        "updated_at": "2025-03-05T18:30:00Z"
+    },
+    {
+        "title": "Write blog post",
+        "description": "Draft a blog post about the benefits of using Django for web development.",
+        "completed": false,
+        "created_at": "2025-03-04T14:00:00Z",
+        "updated_at": "2025-03-04T14:00:00Z"
+    },
+    {
+        "title": "Buy groceries",
+        "description": "Purchase groceries for the week, including fruits, vegetables, and dairy products.",
+        "completed": true,
+        "created_at": "2025-03-01T09:00:00Z",
+        "updated_at": "2025-03-01T09:00:00Z"
+    },
+    {
+        "title": "Plan weekend trip",
+        "description": "Organize a trip to the mountains for the upcoming weekend.",
+        "completed": false,
+        "created_at": "2025-03-03T16:30:00Z",
+        "updated_at": "2025-03-03T16:30:00Z"
+    }
+]
