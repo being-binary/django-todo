@@ -1,0 +1,25 @@
+# Virtual environment
+venv/
+django_env/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Database
+*.sqlite3
+
+# Static and media files
+staticfiles/
+media/
+
+# IDE settings
+.idea/
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
