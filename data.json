@@ -1,0 +1,240 @@
+[
+    {
+        "model": "task.list",
+        "fields": {
+            "title": "Work"
+        }
+    },
+    {
+        "model": "task.list",
+        "fields": {
+            "title": "Personal"
+        }
+    },
+    {
+        "model": "task.list",
+        "fields": {
+            "title": "Shopping"
+        }
+    },
+    {
+        "model": "task.list",
+        "fields": {
+            "title": "Study"
+        }
+    },
+    {
+        "model": "task.task",
+        "fields": {
+            "title": "Complete Project Report",
+            "description": "Finish the monthly project report and submit it to the manager. The report should include the latest performance metrics and market analysis.",
+            "duedate": "2025-03-20T00:00:00Z",
+            "listtype": 1,
+            "createdAt": "2025-03-15T00:00:00Z"
+        }
+    },
+    {
+        "model": "task.task",
+        "fields": {
+            "title": "Buy Groceries",
+            "description": "Buy essential groceries: milk, bread, eggs, fruits, and vegetables. Don't forget to check for discounts on organic products.",
+            "duedate": "2025-03-16T00:00:00Z",
+            "listtype": 3,
+            "createdAt": "2025-03-15T00:00:00Z"
+        }
+    },
+    {
+        "model": "task.task",
+        "fields": {
+            "title": "Call Mom",
+            "description": "Call mom to check on her health, talk about family matters, and plan for the upcoming family gathering.",
+            "duedate": "2025-03-18T00:00:00Z",
+            "listtype": 2,
+            "createdAt": "2025-03-15T00:00:00Z"
+        }
+    },
+    {
+        "model": "task.task",
+        "fields": {
+            "title": "Finish Math Homework",
+            "description": "Complete the remaining questions in the Math homework, focusing on algebra and calculus problems. Review notes before submitting.",
+            "duedate": "2025-03-17T00:00:00Z",
+            "listtype": 4,
+            "createdAt": "2025-03-15T00:00:00Z"
+        }
+    },
+    {
+        "model": "task.task",
+        "fields": {
+            "title": "Prepare Client Presentation",
+            "description": "Prepare a presentation for the upcoming client meeting. Focus on project updates, key milestones, and upcoming deliverables.",
+            "duedate": "2025-03-22T00:00:00Z",
+            "listtype": 1,
+            "createdAt": "2025-03-15T00:00:00Z"
+        }
+    },
+    {
+        "model": "task.subtask",
+        "fields": {
+            "title": "Write Introduction",
+            "task": 1
+        }
+    },
+    {
+        "model": "task.subtask",
+        "fields": {
+            "title": "Analyze Market Trends",
+            "task": 1
+        }
+    },
+    {
+        "model": "task.subtask",
+        "fields": {
+            "title": "Prepare Performance Charts",
+            "task": 1
+        }
+    },
+    {
+        "model": "task.subtask",
+        "fields": {
+            "title": "Write Conclusion",
+            "task": 1
+        }
+    },
+    {
+        "model": "task.subtask",
+        "fields": {
+            "title": "Pick up bread",
+            "task": 2
+        }
+    },
+    {
+        "model": "task.subtask",
+        "fields": {
+            "title": "Pick up milk",
+            "task": 2
+        }
+    },
+    {
+        "model": "task.subtask",
+        "fields": {
+            "title": "Get vegetables",
+            "task": 2
+        }
+    },
+    {
+        "model": "task.subtask",
+        "fields": {
+            "title": "Ask about health",
+            "task": 3
+        }
+    },
+    {
+        "model": "task.subtask",
+        "fields": {
+            "title": "Check on family",
+            "task": 3
+        }
+    },
+    {
+        "model": "task.subtask",
+        "fields": {
+            "title": "Complete 1st exercise",
+            "task": 4
+        }
+    },
+    {
+        "model": "task.subtask",
+        "fields": {
+            "title": "Complete 2nd exercise",
+            "task": 4
+        }
+    },
+    {
+        "model": "task.subtask",
+        "fields": {
+            "title": "Prepare slides for Introduction",
+            "task": 5
+        }
+    },
+    {
+        "model": "task.subtask",
+        "fields": {
+            "title": "Prepare slides for Key Milestones",
+            "task": 5
+        }
+    },
+    {
+        "model": "task.subtask",
+        "fields": {
+            "title": "Prepare slides for Upcoming Deliverables",
+            "task": 5
+        }
+    },
+    {
+        "model": "task.tag",
+        "fields": {
+            "name": "Important"
+        }
+    },
+    {
+        "model": "task.tag",
+        "fields": {
+            "name": "Urgent"
+        }
+    },
+    {
+        "model": "task.tag",
+        "fields": {
+            "name": "Low Priority"
+        }
+    },
+    {
+        "model": "task.tag",
+        "fields": {
+            "name": "Personal"
+        }
+    },
+    {
+        "model": "task.tag",
+        "fields": {
+            "name": "Work"
+        }
+    },
+    {
+        "model": "task.tag",
+        "fields": {
+            "name": "Study"
+        }
+    },
+    {
+        "model": "task.task",
+        "fields": {
+            "tags": [1, 2, 5]
+        }
+    },
+    {
+        "model": "task.task",
+        "fields": {
+            "tags": [3]
+        }
+    },
+    {
+        "model": "task.task",
+        "fields": {
+            "tags": [4]
+        }
+    },
+    {
+        "model": "task.task",
+        "fields": {
+            "tags": [6]
+        }
+    },
+    {
+        "model": "task.task",
+        "fields": {
+            "tags": [1, 2, 5]
+        }
+    }
+]

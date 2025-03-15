@@ -4,8 +4,8 @@
 <div class="row">
     <div class="col-md-8">
         <h2>Task</h2>
-        {% for task in tasks %}
         <div class="list-group">
+        {% for task in tasks %}
             {% if task.completed == False %}
             <div class="list-group-item d-flex justify-content-between mt-1 align-items-center">
                 <p>{{task.title}}</p>
@@ -15,8 +15,11 @@
                </span>
             </div>
             {% endif %}
-        </div>
         {% endfor %}
+            <div class="list-group-item d-flex justify-content-between mt-1 align-items-center">
+                <a href="{% url 'addpage' %}">Add New Task</a>
+            </div>
+        </div>
     </div>
 </div>
 <div class="row mt-2">

@@ -84,3 +84,4 @@ websockets==13.1
 whitenoise==5.1.0
 wincertstore==0.2
 xhtml2pdf==0.2.5
+// python manage.py makemigrations yourappname --empty --name initial_migration

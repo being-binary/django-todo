@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import Task
-from .forms import TaskForm
+from .forms import TaskForm, SubTaskForm, ListForm, TagForm
 # Create your views here.
 
 #serializer
@@ -50,8 +50,10 @@ def addTask(request, *args, **kwargs):
         if form.is_valid():
             form.save()
             return redirect(home)
-        
-    return render(request, 'addtask.html', context={'form' : TaskForm()})    
+    context = {
+        'tform' : TaskForm(),
+    }
+    return render(request, 'addtask.html', context=context)    
 
 def updateTask(request, pk, *args, **kwargs):
     task =  Task.objects.get(id=pk)
